@@ -15,6 +15,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script   src="https://code.jquery.com/jquery-2.2.1.js"   integrity="sha256-eNcUzO3jsv0XlJLveFEkbB8bA7/CroNpNVk3XpmnwHc="   crossorigin="anonymous"></script>
+
 
 </head>
 <body>
@@ -49,7 +51,7 @@
                 <ul>
                     <li class="first"><a href="#">Accueil</a></li><!--
                     --><li class="first"><a href="#">Qui sommes-nous ? <img src="ressources/fleche_menu.png" alt="fleche_menu"> </a></li><!--
-                    --><li class="first"><a href="#">Produits <img src="ressources/fleche_menu.png" alt="fleche_menu" id="fleche_menu"></a>
+                    --><li class="first"><a href="#" class="opensub">Produits <img src="ressources/fleche_menu.png" alt="fleche_menu" id="fleche_menu"></a>
 
                     </li><!--
                     --><li class="first"><a href="#">Contact / Renseignement <img src="ressources/fleche_menu.png" alt="fleche_menu"></a></li>
@@ -325,5 +327,10 @@
         </div>
 </footer>
 </main>
+<script type="text/javascript">
+    $(".opensub").click(function(){
+        $(".sousmenu").toggleClass("open");
+    });
+</script>
 </body>
 </html>

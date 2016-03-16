@@ -11,7 +11,6 @@
 
 
 
-
 /* DESKTOP FIRST :1080+ */
 @media screen and (min-width: 952px) {
     /*Général*/
@@ -556,6 +555,9 @@ vertical-align: bottom;
         .copy p i{
             color: #fff;
 
+        }
+        .open{
+            display: block;
         }
     }
 
